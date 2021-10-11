@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Flavours of Physics, Introduction, ​Problem statement, Mapping real world problem to a machine learning problem, Metrics for evaluation, Real
+world objectives, ​Data, Exploratory
+Data Analysis (EDA), ​Feature
+Engineering, ​Hyperparameter
+tuning, ​Final
+Classifier, ​Deployment, ​Summary, ​References">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.27.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-f7a5"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://www.linkedin.com/in/aniket-vishnupurikar-445a42192/" target="_blank" style="padding: 10px 20px;">My LinkedIn</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.linkedin.com/in/aniket-vishnupurikar-445a42192/" target="_blank" style="padding: 10px 20px;">My LinkedIn</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-f299">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-right u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-dark-2 u-title u-text-1">Flavours of Physics</h1>
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/atom.png" alt="" data-image-width="500" data-image-height="500">
+        <p class="u-align-left u-text u-text-default u-text-2">Problem statement and data: <a href="https://www.kaggle.com/c/flavours-of-physics" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">https://www.kaggle.com/c/flavours-of-physics</a>
+          <br>
+          <br>GitHub repository of the project: <a href="https://github.com/aniket-vishnupurikar/flavours-of-physics" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">https://github.com/aniket-vishnupurikar/flavours-of-physics</a>
+          <br>
+          <br>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-37f2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Introduction</h1>
+        <p class="u-text u-text-default u-text-2">The case study
+named “Flavours of Physics” is a very interesting problem regarding search for
+“New Physics”. By “New Physics” it is meant that a new fundamental theory of
+physics is being searched since our existing understanding of physics or
+science is not enough in explaining some observed phenomenon in nature. It is
+well known that all the matter in the universe is made of several fundamental
+particles and these fundamental particles interact with each other via fundamental
+forces in nature which are gravitational force, electromagnetic force, strong
+nuclear force and weak nuclear force. These forces are also carried by some
+particles. All these material particles and force carrying particles are
+studied in the branch of physics called the high energy physics or the particle
+physics. In particular the theory describing these particles and their behavior
+is called the standard model (SM) of particle physics. The Standard Model (SM)
+of particle physics is the current theory describing fundamental particles as
+well as strong, weak and electromagnetic interactions. It was formulated in the
+1960’s and 1970’s and since then has passed with flying colors extensive
+experimental tests. Despite these facts, the SM has several severe
+imperfections. For instance, SM does not explain the matter-antimatter
+asymmetry in the Universe or the structure of generations of elementary
+particles. Furthermore, it does not predict the existence of the dark matter or
+describes quantum gravity. This leads to extensive studies of extended
+theories, commonly labelled as physics beyond the Standard Model
+(BSM).&nbsp;The matter making fundamental particles are called as fermions
+(because they obey Fermi-Dirac statistic) and the force particles are called as
+Bosons (because they obey Bose-Einstein statistic). Fermions are further
+divided as leptons and quarks. Both of these kinds are observed in three
+generations. Out of these the lepton generations are electron(&nbsp; &nbsp; &nbsp;) and electron neutrino(&nbsp; &nbsp; &nbsp;), muon (&nbsp; &nbsp;&nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->) and muon neutrino (&nbsp; &nbsp;&nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->), tau (&nbsp; &nbsp;&nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->) and tau neutrino (&nbsp; &nbsp; ). Each lepton is assigned a lepton flavour (𝐿𝑒, 𝐿𝜇,
+𝐿𝜏) and a lepton number (𝐿). These are the quantum numbers assigned to
+leptons which, according to SM, are conserved in all the observed
+reactions/decays in which leptons take part. Even though this is true according
+to SM, the lepton flavour violation (LFV), i.e. lepton flavours are not
+conserved, is observed in a phenomenon called neutrino oscillation in which one
+flavour of neutrino transforms into another flavour of neutrino. More such LFVs
+would be a clear indication of physics beyond standard model. In view of this,
+in 1970s, tau(𝜏) lepton was discovered. This tau lepton can
+decay according to SM as follows</p>
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/electron.gif" alt="" data-image-width="21" data-image-height="8">
+        <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/electron_neutrino.gif" alt="" data-image-width="15" data-image-height="11">
+        <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/muon.gif" alt="" data-image-width="11" data-image-height="12">
+        <img class="u-image u-image-default u-preserve-proportions u-image-4" src="images/muon_neutrini.gif" alt="" data-image-width="17" data-image-height="14">
+        <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/tau.gif" alt="" data-image-width="10" data-image-height="8">
+        <img class="u-image u-image-default u-preserve-proportions u-image-6" src="images/tau_neutrino.gif" alt="" data-image-width="16" data-image-height="11">
+        <img class="u-image u-image-default u-preserve-proportions u-image-7" src="images/reaction1.gif" alt="" data-image-width="105" data-image-height="42">
+        <p class="u-text u-text-default u-text-3">where&nbsp; &nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp; &nbsp;represents&nbsp;𝜏&nbsp;with negative charge,&nbsp; &nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp; &nbsp;represents anti-particle of electron
+neutrino,&nbsp; &nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp; &nbsp;represents negatively charged
+muon,&nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp; &nbsp; &nbsp;represents anti-particle of tau neutrino. The
+above decays are validated by SM because they follow conservation of lepton
+flavours and lepton numbers. However various unexplained phenomenon in
+universe, such as explanation of matter-antimatter symmetry, require the
+violation of lepton flavour. If lepton flavour violation is allowed then the
+tau particle can decay according to following reactions too.</p>
+        <img class="u-image u-image-default u-preserve-proportions u-image-8" src="images/negative_tau.gif" alt="" data-image-width="19" data-image-height="11">
+        <img class="u-image u-image-default u-preserve-proportions u-image-9" src="images/ani-tau-neutrino.gif" alt="" data-image-width="17" data-image-height="14">
+        <img class="u-image u-image-default u-preserve-proportions u-image-10" src="images/negative-muon.gif" alt="" data-image-width="20" data-image-height="15">
+        <img class="u-image u-image-default u-preserve-proportions u-image-11" src="images/anti-tau-neutrino.gif" alt="" data-image-width="17" data-image-height="14">
+        <img class="u-image u-image-default u-preserve-proportions u-image-12" src="images/reaction2.gif" alt="" data-image-width="113" data-image-height="19">
+        <p class="u-text u-text-default u-text-4">But since this
+decay violates lepton flavour conservation it is forbidden according to SM and
+discovery of such a decay would be a concrete evidence of physics beyond
+standard model and it would hence be a major breakthrough on the understanding
+of humans on fundamental laws nature. On this notion, the scientists at LHC-b
+(a high energy collision experiment at Large Hadron Collider in Geneva,
+Switzerland) are constantly searching for this particular decay in tau
+particles produced by LHC proton-proton collisions. It is imperative to note
+here that since the mentioned decay has not yet been discovered experimentally,
+the reactions which represent occurrence of this decay are simulated
+computationally and referred to as “signal events” while the reactions which do
+not represent this decay are actual experimental reactions and are referred to
+as “background events”.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-8afe">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Problem statement</h1>
+        <p class="u-text u-text-default u-text-2"> So, the problem at hand here is given various
+parameters of a decay reaction of a tau particle, we need to predict if the
+decay is <!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp;or not.&nbsp;</p>
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3">Mapping real world problem to a machine learning problem</h1>
+        <p class="u-text u-text-default u-text-4">The problem is a
+binary or a two-class classification problem where given a datapoint (a
+1-dimensional vector of float values) consisting of various parameters of a
+decay reaction of tau particle we need to classify it as 1 (the decay being&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->) or 0 (the decay not being&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->). Here the column “signal” in the dataset is
+the target variable which can take 2 values 0 and 1 and which we need to
+predict.</p>
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/reaction21.gif" alt="" data-image-width="113" data-image-height="19">
+        <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/reaction22.gif" alt="" data-image-width="113" data-image-height="19">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-c9da">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Metrics for evaluation</h1>
+        <p class="u-text u-text-default u-text-2">The evaluation
+metric for this problem is the Weighted Area Under the ROC Curve. We all know
+what a normal Area under the ROC is. The ROC curve is plotted in which TPR is
+plotted versus FPR for different thresholds (<a href="https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">click here</a> to know more about ROC and AUC ). For
+Weighted Area Under the ROC Curve, the ROC Curve is divided into sections or
+ranges based on the True Positive Rate (TPR).&nbsp;To calculate the total area,
+multiply&nbsp;the area with TPR&nbsp;in range [0., 0.2] by&nbsp;weight 2.0, the
+area with TPR&nbsp;in range [0.2, 0.4] by 1.5, the area with TPR in
+range&nbsp;[0.4, 0.6] with weight 1.0, and the area with TPR in range [0.6,
+0.8] with weight 0.5. Anything above a TPR of 0.8&nbsp;has weight 0. This is shown
+in the figure below:
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/weighted_auc.png" alt="" data-image-width="802" data-image-height="548">
+        <p class="u-text u-text-default u-text-3">Fig 1: Weighted Area Under the ROC Curve<br>Source: <a href="https://www.kaggle.com/c/flavours-of-physics/overview/evaluation" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">https://www.kaggle.com/c/flavours-of-physics/overview/evaluation</a>
+          <br>
+        </p>
+        <p class="u-text u-text-default u-text-4">These weights are
+chosen to match the evaluation methodology used by CERN scientists.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-0a10">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Real
+world objectives</h1>
+        <p class="u-text u-text-default u-text-2"> Nature loves
+symmetry and the laws of nature ensure that some physical quantities, such as
+energy or momentum, are conserved and each conservation law is associated with
+a fundamental symmetry. So in the domain of subatomic particles, there are
+several quantum numbers that are needed to be conserved in order for a process
+to happen. These conservation laws are mentioned in the Standard Model of
+particle physics which is our current understanding of the subatomic world. But
+there are some processes which seem to break these conservation laws hence
+seemingly breaking the symmetry of some kind. But this is not allowed by the
+laws of nature. Which clearly means that our current understanding of subatomic
+world according to the standard model is not complete and perfect. Therefore,
+study of such processes would encourage us to correct our understanding and go
+“beyond standard model”. Therefore, such experiments and studies help us update
+our knowledge about laws of nature and discover new areas of science.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="sec-7aa1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Data</h1>
+        <p class="u-text u-text-default u-text-2"> The data for this
+study is given in four different csv files. These four datasets are described
+below. <!--[if !supportLists]-->
+          <br>1.&nbsp;training.csv: This is a labelled dataset (the
+label ‘signal’ being ‘1’ for signal events, ‘0’ for background events) to train
+the classifier. Signal events have been simulated because the <!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->&nbsp;decay has not been observed
+to occur in nature or in any experiment. Hence the data for signal 1 suggesting
+occurrence of the decay has been generated by computer simulations. The data representing “background events”
+i.e. non-occurrence of the decay are real data obtained by proton-proton
+collision experiments (tau (<!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->) particles are produced in such collisions
+and later they decay by different processes) at the LHC-b lab. <!--[if !supportLists]-->
+          <br>
+          <br>2.&nbsp;test.csv: This is the test data used for
+evaluation on Kaggle. Test.csv has all the columns that train.csv has except
+mass, production, min_ANNmuon and signal (this is the target variable)&nbsp;.
+In addition to these two datasets there are two more datasets described below. <!--[if !supportLists]-->
+          <br>
+          <br>3.&nbsp;check_agreement.csv:&nbsp; Since the classifier will be trained on a mix
+of simulated signal and real data background,&nbsp;it is possible to reach a
+high performance by picking features that are not perfectly modeled in the
+simulation. Hence it is required that&nbsp;the classifier not have a large
+discrepancy when applied to real and simulated data. Hence to check if
+classifier is able to discriminate between real and simulated data, this
+dataset has been created on which agreement test will be conducted. Unless the
+classifier passes this test, it will not be considered valid. There is another
+decay reaction which is actually observed in nature and which has the same
+topology as the <!--[if !msEquation]--><!--[if !vml]--><!--[endif]--><!--[endif]-->decay. The check_agreement.csv data has been created using this
+particular decay. Therefore, the agreement test conducts KS test (<a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">click here</a> to
+know more about KS test) to check distribution of results on real and simulated
+events on which check_agreement.csv data is created.&nbsp;<br>
+          <br>4. check_correlation.csv: There is a feature “mass”
+in training and test data which denotes mass of the decaying candidate. In the
+domain of high energy physics “mass” is an unreliable feature since it is
+heavily associated with energy in high energy situations. Therefore, it is
+required that the results obtained from the classifier be uncorrelated to the
+mass of the decaying particle. Therefore, to check correlation of the
+classifier’s results with the mass, this dataset has been created. This dataset
+contains only real background events recorded at LHC-b&nbsp;to evaluate your
+submission correlation with mass locally. It contains the same columns as
+test.csv and mass column to check correlation with. CVM test is conducted to
+check the correlation (<a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93von_Mises_criterion" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">click here</a> to
+know more about CVM test).
+        </p>
+        <p class="u-text u-text-default u-text-3">Finally, the
+target variable is “signal” which is 1 for “signal events” i.e. occurrence of
+decay and 0 for “background events” i.e. non-occurrence of the decay.
+The train.csv
+dataset consists of nearly 50 columns. Describing each column here would be too
+lengthy process. Since our main goal here is to focus on the Machine Learning
+techniques employed to solve this problem, I will redirect you to this <a href="https://storage.googleapis.com/kaggle-competitions/kaggle/4488/media/lhcb_description_official.pdf" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">link</a> which leads to a research paper describing the experiment and data in detailed.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="sec-2868">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Exploratory
+Data Analysis (EDA)</h1>
+        <p class="u-text u-text-default u-text-2"> We will conduct
+some basic EDA on the training data and try to identify patterns in our data,
+features most useful for classification, clean the data as and when necessary,
+preprocess the data and experiment with some baseline models in this section.
+The test data does not have all the features that train data has. Therefore, we
+will ignore those features during EDA. Basic pandas code shows that the train
+data has 67553 rows and 51 columns, it has no missing values, there are 25879
+datapoints of class 0 and 41647 datapoints of class 1 so there is slight
+imbalance in the distribution of the target variable but not so severe. Hence
+the problem can be treated as normal binary classification problem. After
+removing the columns which are not in test data, training data has 47 columns.
+Conducting univariate analysis on all these features is tedious task.
+Therefore, we will try to identify important features which are useful in
+prediction and are correlated to the target variable and conduct analysis on
+those features. For this we will first check correlation of feature “signal”
+with all other variables. Code snippet to for this is shown in Fig 2.</p>
+        <p class="u-text u-text-default u-text-3">Fig 2: code snippet
+for correlation.</p>
+        <img class="u-image u-image-default u-image-1" src="images/correlation_1.JPG" alt="" data-image-width="1359" data-image-height="111">
+        <p class="u-text u-text-default u-text-4"> From above code the
+most positively correlated features with “signal” are "dira", "CDF2", "CDF3",
+"p0_IPSig", "p0_IP", "cdf1"&nbsp; and most
+negatively correlated features with “signal” are "IPSIg", "IP", "iso",
+"ISO_SumBDT", "SPDhits", "p0_IsoBDT",
+"p1_IsoBDT", "isolatione", "VertexChi2",
+"p2_IsoBDT", "isolationd", "isolationf",
+"p0_track_Chi2Dof", "isolationa", "DOCAtwo",
+"DOCAthree", "isolationb", "isolationc",
+"DOCAone", "p1_track_Chi2Dof",
+"p2_track_Chi2Dof", "IP_p1p2". So we will include
+most of&nbsp; these variables in univariate
+and bivariate analysis with “signal” variable.&nbsp;</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="sec-7f94">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> Another way to get
+important features is to train a simple machine learning model and obtain
+feature importance from it. For his we will train a random forest model from
+scikit-learn’s implementation and obtain feature importance from it. Code
+snippet for the same is given in Fig 3 (note: following code snippet does not
+include hyperparameter tuning. Refer link for the GitHub repository of this
+project for complete code).</p>
+        <img class="u-image u-image-default u-image-1" src="images/rf_feature_importance.JPG" alt="" data-image-width="1402" data-image-height="356">
+        <p class="u-text u-text-default u-text-2"> Fig 3: code snippet
+for training a basic random forest&nbsp;<br>model to get feature importance 
+        </p>
+        <p class="u-text u-text-default u-text-3"> From above model
+feature importance has been obtained using <i>model.feature_importances_</i> method and feature importance are plotted the plot is given in Fig 4. From the
+figure it can be seen that features&nbsp;"LifeTime", "dira", "IP",
+"IPSig", "VertexChi2", "iso",
+"ISO_SumBDT", "p0_track_Chi2Dof", "p0_IpSig",
+"SPDhits"&nbsp;seem to be important features. So now after
+identifying some of the most important features from above two methods, each of
+these have been examined separately. Same procedure of examination has been
+applied to all numerical and categorical features. So here is an example of one
+categorical and one numerical feature has been given with code snippet.
+        </p>
+        <img class="u-image u-image-default u-image-2" src="images/feature_imp.png" alt="" data-image-width="713" data-image-height="661">
+        <p class="u-text u-text-default u-text-4">Fig 4: Identifying
+Important features for analyzing them.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="sec-b454">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"><b>Example of analysis of numerical feature</b>: take example of numerical feature “LifeTime”. First the probability distribution
+is checked with Boxplot aligned below to see how the variable is distributed.
+Code snippet and the plot for this is given in Fig 5a and Fig 5b respectively.
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/LifeTime_pdf_code.JPG" alt="" data-image-width="620" data-image-height="237">
+        <img class="u-image u-image-default u-image-2" src="images/LifeTime_pdf_plot.JPG" alt="" data-image-width="661" data-image-height="610">
+        <p class="u-text u-text-default u-text-2"> Fig 5a: “LifeTime” PDF
+and Boxplot code</p>
+        <p class="u-text u-text-default u-text-3"> Fig 5b: “LifeTime” PDF and
+Boxplot plot</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-10" id="sec-a568">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> After the PDF,
+The CDF of the variable has been plotted to see what percentage of values lie
+below or above one particular value taken by the variable. The code snippet and
+the plot for the CDF is given in the Fig 6a and Fig 6b respectively.</p>
+        <img class="u-image u-image-default u-image-1" src="images/LifeTime_cdf_code.JPG" alt="" data-image-width="478" data-image-height="111">
+        <img class="u-image u-image-default u-image-2" src="images/LifeTime_cdf_plot.png" alt="" data-image-width="442" data-image-height="333">
+        <p class="u-text u-text-default u-text-2"> Fig 6a: “LifeTime”
+CDF code </p>
+        <p class="u-text u-text-default u-text-3"> Fig 6b: “LifeTime” CDF plot</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-11" id="sec-8e57">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> After the CDF,
+the Boxplot of “LifeTime” is plotted for two distinct values of target variable
+“signal” separately and compared to get knowledge if “LifeTime” is able to
+distinguish between “signal 1” and “signal 0” based on distribution of its
+values. The code snippet and plot for the same is given in Fig 7a and Fig 7b.</p>
+        <img class="u-image u-image-default u-image-1" src="images/LifeTime_boxplot.JPG" alt="" data-image-width="614" data-image-height="57">
+        <img class="u-image u-image-default u-image-2" src="images/LifeTime_boxplot_plot.png" alt="" data-image-width="343" data-image-height="208">
+        <p class="u-text u-text-default u-text-2"> &nbsp;Fig 7a: “LifeTime” Boxplot code</p>
+        <p class="u-text u-text-default u-text-3"> Fig 7b: “LifeTime”
+Boxplot plot</p>
+        <p class="u-text u-text-default u-text-4"> The observations
+made from all these plots are summarized as follows: “"LifeTime" can
+be treated as a continuous variable. “LifeTime" shows left skewed
+distribution with majority of data lying below 0.005. Furthermore, there are a
+lot of outliers with more that 90% of the data lying below 0.005. Looking at
+the box plot and the means and medians of LifeTime for two different signals,
+it can be said that LifeTime does not possess clear discriminative power to
+distinguish between two signals. Still in general larger outlier LifeTime
+values correspond to signal 0 but IQR for signal 1 is greater than IQR for
+signal 0 for the variable LifeTime. These facts might be helpful in
+classification.”
+Similar strategy
+of analysis is applied for all the important numerical features and similar
+kind of observations are made on them regarding their ability to solve the
+problem of classification.&nbsp;</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-12" id="sec-4afb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"><b>Example of analysis of categorical feature</b>: take example of categorical feature “iso”.
+First take a look at count of each category and “signal” wise count of each
+category for each category of “iso” feature. The code for simple count and the
+actual plot is given in the Fig 8a and 8b while the code and actual plot for
+“signal” wise count is given in Fig 9a and 9b.
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/iso_count_code.JPG" alt="" data-image-width="534" data-image-height="131">
+        <img class="u-image u-image-default u-image-2" src="images/iso_count_plot.png" alt="" data-image-width="681" data-image-height="446">
+        <p class="u-text u-text-default u-text-2"> Fig 8a: code for
+plotting count of each category in “iso”</p>
+        <p class="u-text u-text-default u-text-3"> Fig 8b: Plot of
+count of each category in “iso”</p>
+        <img class="u-image u-image-default u-image-3" src="images/signal_wise_count_iso.JPG" alt="" data-image-width="655" data-image-height="156">
+        <img class="u-image u-image-default u-image-4" src="images/signal_wise_count_iso_plot.png" alt="" data-image-width="681" data-image-height="446">
+        <p class="u-text u-text-default u-text-4"> Fig 9a: code for
+“signal” wise count of “iso”</p>
+        <p class="u-text u-text-default u-text-5"> Fig 9b: plot of
+“signal” wise count of “iso”</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-13" id="sec-230a">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> Now “signal” wise
+Boxplot of “iso” is examined to see the ability of “iso” to differentiate
+between “signal” 1 and “signal” 0. The code for the same is given in Fig 10a
+and the actual plot is given in Fig 10b.</p>
+        <img class="u-image u-image-default u-image-1" src="images/iso_signal_wise_box_code.JPG" alt="" data-image-width="479" data-image-height="82">
+        <img class="u-image u-image-default u-image-2" src="images/iso_signal_wise_boxplot.png" alt="" data-image-width="550" data-image-height="425">
+        <p class="u-text u-text-default u-text-2"> Fig 10a: code for
+“signal” wise boxplot of “iso”</p>
+        <p class="u-text u-text-default u-text-3"> Fig 10b: Plot of
+“signal” wise boxplot of” iso”</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-14" id="sec-e3af">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> Now, since “iso” is a
+categorical feature, the Chi squared hypothesis test has been conducted to see
+if “signal” feature depends on “iso” feature. The details and code for the test
+are given in Fig11a and result of the test is given in Fig 11b.</p>
+        <img class="u-image u-image-default u-image-1" src="images/chi2_iso_code.JPG" alt="" data-image-width="981" data-image-height="708">
+        <p class="u-text u-text-default u-text-2"> Fig 11a: Code for chi
+squared test for hypothesis test to check<br>dependence of “signal” on “iso”
+        </p>
+        <img class="u-image u-image-default u-image-2" src="images/chi2_iso_result.JPG" alt="" data-image-width="898" data-image-height="739">
+        <p class="u-text u-text-default u-text-3"> Fig
+11b: Results of the chi squared test described in Fig 11a.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-15" id="sec-2d01">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> In similar way
+all other important numerical and categorical features are analyzed.
+It is also
+important to check for multicollinearity. Multicollinearity happens when two or
+more features are related to each other in some mathematical form. For example,
+let in a fictious data there are features f1, f2, f3.and f4. Then if f1 can be
+represented as f1 = kf2 + mf3 where k and m are constants then f1, f2 and f3
+are said to be multicollinear. The problem with having such features is that
+the model will not learn anything new using these redundant features. When it
+comes to performance of the model multicollinearity may not affect it much but
+interpretability of the model gets affected severely. Therefore, it is
+advisable to remove redundant features. Multicollinearity can be detected via
+various methods. the most common one is<b>&nbsp;</b>VIF (Variable Inflation Factors.). <a href="https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Click here</a> to know
+more about VIF. In a nutshell VIF = 1 represents no correlation between the
+given independent variable and the other independent variables in the dataset.
+If VIF is greater than 5 or 10 then it indicates high multicollinearity between
+the given independent variable and the other independent variables. Fig 12
+indicates the code to calculate VIF of every feature in the dataset of our
+problem.
+        </p>
+        <p class="u-text u-text-default u-text-2"> Fig 12: Code for calculation of VIF to check multicollinearity.</p>
+        <img class="u-image u-image-default u-image-1" src="images/VIF.JPG" alt="" data-image-width="756" data-image-height="265">
+        <p class="u-text u-text-default u-text-3"> So now features which
+have high VIF value and which are not in the list of important features will be
+removed while training the model.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-16" id="sec-9f3a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> Finally, PDFs of
+all the features separated for “signal” 1 and “signal” 0 are plotted to get
+high level view of distribution of all features for two different values of
+target variables. Plots of some features are given below in Fig 13. Similar
+plots are created for rest of the features too and all of them show similar
+trend as the one seen in Fig 13. It can be observed that in general the distributions of all the
+features for signal 1 and signal 0 show similar shape but distributions of
+signal 0 lie below the distributions for signal 1 for all the features. So, it
+can be said that values of all the features for signal 0 tend to be lesser than
+signal 1. In particular the features "IP", "IPSig",
+"dira", "VertexChi2", "iso" have values for
+signal 0 much lesser than values for signal 1. This turns out to be a very
+useful observation since it clearly tells us that two classes of the target
+variable are indeed separable based on the features given in the data and the
+problem can be solved with high accuracy if some new features are added to the
+data.</p>
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/joint_pdf.png" alt="" data-image-width="1072" data-image-height="1072">
+        <p class="u-text u-text-default u-text-2"> Fig 13: The PDFs of
+all the features split according&nbsp;<br>to the two different categories in target
+variable “signal”
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-17" id="sec-4712">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Feature
+Engineering</h1>
+        <p class="u-text u-text-default u-text-2"> Feature
+engineering is an important step before we train our final classifier. Training
+a classifier on the features that are given in the data may work well but the
+performance of the classifier can be improved significantly if new features are
+created using already available features. Though it is true that new features
+may improve the performance of the classifier, it is not guaranteed. Therefore,
+a baseline model is trained with already present features in the data which can
+be used to see if addition of new features really improves the performance of
+the classifier or not. For this a RandomForest classifier was trained on
+already available data with hyperparameter tuning using RandmizedSearch CV. But
+as mentioned in the Data section, the classifier must pass the agreement and
+correlation tests (code for these tests can be found in the GitHub link for the
+project). The RandomForest Classifier was failing the correlation test.
+Therefore, there was a need of a classifier which would be trained such that it
+will be not correlated to the “mass” feature so as to pass the correlation
+test. Upon some research, I came across a machine learning library called
+hep-ml (high energy physics machine learning) which had GradientBoosting
+implementation where we need to provide the loss function and the name of the
+feature which we want our classifier to not be correlated to (in our case
+“mass”).&nbsp; <a href="https://github.com/arogozhnikov/hep_ml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Click
+here</a> to know more
+about hep-ml. So UGradientBoosting (GradientBoosting implementation of hep-ml)
+classifier with BinFlatnessLossFunction (creates flatness for “mass”) has been
+used in this case in order to train a classifier to obtain non-correlation with
+“mass” feature. The code is shown in Fig 14.
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/boost1.JPG" alt="" data-image-width="904" data-image-height="187">
+        <p class="u-text u-text-default u-text-3"> Fig
+14: UGradientBoosting classifier without&nbsp;<br>new features
+&nbsp;
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-18" id="sec-bed8">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> So
+now baseline model has been trained. New features can be added to the data and
+more classifiers are trained to get improved performance. On observing the
+data, it can be seen that there are some features like 'isolationa',
+'isolationb', 'isolationc' and 'p0_IP', 'p1_IP', 'p2_IP' and many others which,
+by their name, sound like are related and represent same physical quantity in
+some way. So, new features are created using such features. Further more the
+feature “FlightDistance” in some ways represent distance travelled by tau
+particle and “LifeTime” represents the time period between creation of tau
+particle and its decay. So, if “FlightDistance” is divided by “LifeTime” then
+it can be abstractly called as velocity of the tau particle. SO new feature can
+be created this way. In addition to these features some more features are added
+from literature survey and from Kaggle discussion forums. The function that
+returns a dataframe with added features can be seen in the Fig 15 below.</p>
+        <img class="u-image u-image-default u-image-1" src="images/feature_eng.JPG" alt="" data-image-width="1136" data-image-height="548">
+        <p class="u-text u-text-default u-text-2"> Fig 15: Feature
+engineering</p>
+        <p class="u-text u-text-default u-text-3"> After adding these
+features some features which we had identified as redundant and un-important
+during EDA are removed before training the classifier.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-19" id="sec-1353">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Hyperparameter
+tuning</h1>
+        <p class="u-text u-text-default u-text-2"> So now since many
+new features have been identified and added to the dataset it is time to tune
+the hyperparameters of the UGradientBoosting Classifier. This algorithm is
+nothing but an ensemble boosting technique which uses decision trees as base
+learners. So, the tunable hyperparameters are max_depth, n_estimators ,
+max_features, sub_sample and learning_rate. The meaning of all these parameters
+can be found in the <a href="https://github.com/arogozhnikov/hep_ml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">documentation</a> link for the hep-ml.&nbsp; The hyperparameter tuning technique used here
+is Bayesian optimization. In particular the library used is bayes_opt. In a
+nutshell Bayesian optimization is a probability based hyperparameter tuning
+method which uses performance of previous parameters to determine next
+hyperparameters in each iteration. Number of iterations can be determined by
+is. More the number of iterations greater the chances of obtaining best
+hyperparameters. <a href="https://github.com/fmfn/BayesianOptimization" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Click
+here</a> to know more
+about Bayesian optimization and bayes_opt. One problem in this case with using
+Bayesian optimization is that in this case there are several parameters which
+take discrete values like max_depth, n_estimators. The bayes_opt implementation
+demands the bounds of parameters i.e. the continuous values of parameters. So
+it directly does not work for discrete parameters. Therefore, a hack to get
+around this limitation is to use grid of discrete parameters and conduct
+Bayesian optimization for each value in the grid and then obtain best
+parameters. Another problem with hyperparameter tuning is that for
+UGradientBoosting the loss function has to be given separately to create
+flatness of the classifier with respect to the “mass” feature. Here
+BinFlatnessLossFunction has been used as discussed earlier. But the the
+bayes_opt library does not accept Classifier object in which loss function is
+given separately. To get around this problem, a separate class has been created
+called <i>UGradientBoostingClassifierWithLoss </i>in which loss function is incorporated internally (again the code for this
+can be found in the GitHub link of the project). After getting around these
+problems, the bayes_opt algorithm has been run for different pairs of discrete
+parameters for 13 iterations each. The whole code takes a long time to run.
+After tuning the hyperparameters the parameters which give classifier with best
+score and which also passes the correlation and agreement tests turn out to be
+as: n_estimators=900, max_depth = 6, learning_rate = 0.1, subsample=0.5.&nbsp;
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-20" id="sec-14df">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Final
+Classifier</h1>
+        <p class="u-text u-text-default u-text-2"> After obtaining the
+parameters with best classifier a final classifier has been trained using these
+parameters. The classifier passed the agreement and correlation tests on
+respective datasets. Therefore, the predictions were made on test data and the
+final results on the test data were submitted on Kaggle for scoring. The
+private score was 0.99293 and public score was 0.99237 (the scoring here is weighted AUC under ROC Curve as discussed
+previously). The rank obtained on the leaderboard was 19. So, it can be said
+that the classifier is performing satisfactorily. So, this model was saved as a
+pickle file so it can be used for prediction in deployment environment. The
+code for this is shown in Fig 16.&nbsp;</p>
+        <p class="u-text u-text-default u-text-3"> Fig 16: training
+the final classifier and saving it as a pickle file</p>
+        <img class="u-image u-image-default u-image-1" src="images/model.JPG" alt="" data-image-width="916" data-image-height="227">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-21" id="sec-06cc">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Deployment</h1>
+        <p class="u-text u-text-default u-text-2"> The deployment of the
+model has been done on Amazon EC2 t2-micro instance which is free tier
+eligible. The structure of the deployment folder is shown in the Fig 17</p>
+        <img class="u-image u-image-default u-image-1" src="images/deploy_folder.JPG" alt="" data-image-width="265" data-image-height="237">
+        <p class="u-text u-text-default u-text-3"> Fig 17: Deployment
+folder structure</p>
+        <p class="u-text u-text-default u-text-4"> The subfolder
+“templates” contains index.html file which is used for rendering the html web
+page, app.py file contains the code for flask app to deploy the model,
+finalized_model.pkl is the classifier which will be used for prediction,
+requirements.txt is the text file containing all the dependencies of the
+project(required libraries and modules), sample_input_&amp;_link.docx file
+contains the format in which the input is to be given to get the prediction on
+the web page. The app.py file has function to add new features to the query
+point. This function is called from another function called predict. The
+predict function takes the query point as input, adds new features, removes
+redundant features, loads the pretrained classifier, makes prediction and
+returns the prediction. Again, the whole code is available in the GitHub
+repository of the project. The steps taken for deployment are as follows:</p>
+        <p class="u-text u-text-default u-text-5"><!--[if !supportLists]-->1.&nbsp;&nbsp;&nbsp; <!--[endif]-->Create an EC2 instance. Here EC2
+t2-micro Ubuntu instance was created which was free tier eligible.&nbsp;<!--[if !supportLists]-->
+          <br>2.&nbsp;&nbsp;&nbsp; <!--[endif]-->Login to the instance and move the
+deployment folder from local machine to the created instance.&nbsp;<!--[if !supportLists]-->
+          <br>3.&nbsp;&nbsp;&nbsp; <!--[endif]-->Install python 3 and pip3 on the
+instance and then install all the dependencies of the project using
+requirements.txt file.&nbsp;<!--[if !supportLists]-->
+          <br>4.&nbsp;&nbsp;&nbsp; <!--[endif]-->Run app.py file using nohup to keep
+running it in the background so that the app will be live all the time.&nbsp;<!--[if !supportLists]-->
+          <br>5.&nbsp;&nbsp;&nbsp; <!--[endif]-->Browse to the EC2 instance via public
+IPV4 DNS of the instance on port 5050(on which the app is being served) and
+route predict.&nbsp;<!--[if !supportLists]-->
+          <br>6.&nbsp;&nbsp;&nbsp; <!--[endif]-->Give input the input and click submit
+to see the output.&nbsp;<!--[if !supportLists]-->
+          <br>7.&nbsp;&nbsp;&nbsp; <!--[endif]-->The whole process of deployment has
+been shown in the screen recording video named ”deployment_video.mkv” in the
+GitHub repository of the project.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-22" id="sec-2e64">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Summary</h1>
+        <p class="u-text u-text-default u-text-2"> The field of high
+energy physics is the data rich field where tons of data gets generated in each
+experiment. Analyzing this data efficiently and in proper manner is very
+significant to enrich our understanding of the fundamental laws of nature. The
+case study “Flavours of physics” has been a small effort to analyze one such
+dataset. The machine learning and data analysis techniques used in this case
+study have been proven to be effective in analyzing the dataset provided. Many
+important insights about the data and the problem were extracted during the
+study. The performance obtained by the classifier trained for this dataset
+showed satisfactory performance. Still there is room for improvement in the
+performance by further feature engineering and experimentations with different
+classification algorithms. Use of cloud computing platforms for
+productionisation of such studies can help in improving the efficiency of
+analysis techniques and spread of the knowledge of complex subject matters such
+as high energy physics. The tools of AI and ML will definately prove to be of
+significance in the research of this subject in the future.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-23" id="sec-5c0c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> References</h1>
+        <p class="u-text u-text-default u-text-2">
+          <a href="https://storage.googleapis.com/kaggle-competitions/kaggle/4488/media/lhcb_description_official.pdf" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">https://storage.googleapis.com/kaggle-competitions/kaggle/4488/media/lhcb_description_official.pdf</a>
+        </p>
+        <p class="u-text u-text-default u-text-3">
+          <a href="http://arxiv.org/pdf/1409.8548.pdf" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">http://arxiv.org/pdf/1409.8548.pdf</a>
+        </p>
+        <p class="u-text u-text-default u-text-4">
+          <a href="https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/?nowprocket=1" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/?nowprocket=1</a>
+        </p>
+        <p class="u-text u-text-default u-text-5">
+          <a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</a>
+        </p>
+        <p class="u-text u-text-default u-text-6">
+          <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93von_Mises_criterion" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93von_Mises_criterion</a>
+        </p>
+        <p class="u-text u-text-default u-text-7">
+          <a href="https://github.com/arogozhnikov/hep_ml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">https://github.com/arogozhnikov/hep_ml</a>
+        </p>
+        <p class="u-text u-text-default u-text-8">
+          <a href="https://github.com/fmfn/BayesianOptimization" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">https://github.com/fmfn/BayesianOptimization</a>
+        </p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1cb3"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/website-builder" target="_blank">
+        <span>Website Builder</span>
+      </a>. 
+    </section>
+  </body>
+</html>
